@@ -5,7 +5,7 @@ const HelloWorldDestroyBroken = require('../../components/HelloWorldBroken.vue')
 enableAutoDestroy(afterEach)
 
 describe('HelloWord', () => {
-  it('component mounts fails', async () => {
+  it('component destroy fails', async () => {
     const wrapper = mount(HelloWorldDestroyBroken)
     await wrapper.vm.$nextTick()
     expect(wrapper.contains('div.hello')).toBe(true)
